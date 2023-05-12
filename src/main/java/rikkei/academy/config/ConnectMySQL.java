@@ -9,9 +9,11 @@ public class ConnectMySQL {
 //    private static final String URL = System.getenv("URL");
 //    private static final String USER = System.getenv("USER");
 //    private static final String PASS = System.getenv("PASS");
-    private static final String URL = "jdbc:mysql://localhost:3306/git_group";
-    private static final String USER = "root";
-    private static final String PASS = "Minhtri29092014";
+//    private static final String URL = "jdbc:mysql://localhost:3306/git_group";
+    private static final String URL = System.getenv("URL");
+    private static final String USER = System.getenv("USER");
+
+    private static final String PASS = System.getenv("PASS");
 
     public static Connection getConnection(){
         try {
